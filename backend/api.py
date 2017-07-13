@@ -41,8 +41,12 @@ def api_orders():
 def api_order(order_id):
 	pass
 	if request.method == 'GET':
-		output = fake_order(order_id)
-		return output
+		print order_id, type(str(order_id))
+		if str(order_id) == 'all':
+
+			return dumps(db_orders(client))
+		# output = fake_order(order_id)
+		# return orderutput
 	elif request.method == 'PUT':
 		pass
 	elif request.method == 'POST':
