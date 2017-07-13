@@ -15,6 +15,11 @@ def db_orders(client, filter_params=None):
 	coll = db.orders
 	if not filter_params:
 		return coll.find({})
+	else:
+		results = []
+		for param in filter_params:
+			results.append(coll.find({"Type": "Beverage"}))
+		return results
 
 
 

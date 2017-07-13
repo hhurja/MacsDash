@@ -11,9 +11,9 @@ coll_items = db.items
 # pprint(db.users.find_one({"employee_id": 1.0}))
 items = coll_items.find()
 
-for item in items:
-	pprint(item)
+# for item in items:
+# 	pprint(item)
 
 
-for o in db.orders.find({}):
+for o in db.orders.find({"Type": "Beverage"}):
 	pprint(o)
