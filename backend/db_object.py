@@ -10,12 +10,12 @@ def db_users(user_id, client, all=False):
 		# print type(int(params[1]))
 		return coll.find_one({"employee_id": int(params[1])})
 
-def db_orders(orders, client, filter_params=None):
+def db_orders(client, filter_params=None):
 	db = client.hackathon
 	coll = db.orders
 	if not filter_params:
-		orders = coll.find()
-		return 
+		return coll.find({})
+
 
 
 def db_items(params, client, all=False):
@@ -24,9 +24,9 @@ def db_items(params, client, all=False):
 	if all:
 		return coll.find({})
 	else:
-		return None
+		return coll.find({Type: str(params[0]), Name: str(params[1])})
 
-def db_user(params, client, all):
+def db_user(params, client, all=False):
 	
 	db = client.hackathon
 	coll = db.users
