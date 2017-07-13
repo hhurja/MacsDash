@@ -17,7 +17,20 @@ class FoodItemDataSource{
         foods = []
         
         //Get the food items from the API here
-        
+        let urlString = URL(string: "http://127.0.0.1:5000/api/foods")
+        if let url = urlString {
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    print(error)
+                } else {
+                    if let usableData = data {
+                        let json = try? JSONSerialization.jsonObject(with: usableData, options: [])
+                        print(json)
+                    }
+                }
+            }
+            task.resume()
+        }
     }
     
     func getFoodItems() -> [FoodItem] {

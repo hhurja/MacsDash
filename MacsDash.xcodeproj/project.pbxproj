@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3124C8161F18132500A19103 /* PickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3124C8151F18132500A19103 /* PickupViewController.swift */; };
 		315E17ED1F1809F7004F3D21 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E17EC1F1809F7004F3D21 /* OrdersViewController.swift */; };
 		315E17F01F180A68004F3D21 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E17EF1F180A68004F3D21 /* FoodItem.swift */; };
 		315E17F21F180B47004F3D21 /* FoodItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315E17F11F180B47004F3D21 /* FoodItemDataSource.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3124C8151F18132500A19103 /* PickupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupViewController.swift; sourceTree = "<group>"; };
 		315E17EC1F1809F7004F3D21 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		315E17EF1F180A68004F3D21 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		315E17F11F180B47004F3D21 /* FoodItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemDataSource.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				31FF451B1F17F3AC001890DF /* DeliveryViewController.swift */,
 				315E17EC1F1809F7004F3D21 /* OrdersViewController.swift */,
 				315E17F11F180B47004F3D21 /* FoodItemDataSource.swift */,
+				3124C8151F18132500A19103 /* PickupViewController.swift */,
 			);
 			path = MacsDash;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31ED18D11F17CB430092E9CB /* ViewController.swift in Sources */,
+				3124C8161F18132500A19103 /* PickupViewController.swift in Sources */,
 				315E17F21F180B47004F3D21 /* FoodItemDataSource.swift in Sources */,
 				31ED18CF1F17CB430092E9CB /* AppDelegate.swift in Sources */,
 				31FF451C1F17F3AC001890DF /* DeliveryViewController.swift in Sources */,
