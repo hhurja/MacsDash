@@ -57,7 +57,7 @@ def api_order_by_building(building):
 @app.route('/api/foods')
 def api_foods():
 	#print type(json.loads(dumps(db_items([], client, all=True))))
-	return dumps(db_items([], client, all=True))
+	return dumps(db_items_get([], client, all=True))
 
 @app.route('/api/food/<food_id>', methods=['GET', 'PUT', 'POST'])
 def api_food(food_id):

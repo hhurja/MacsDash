@@ -21,18 +21,18 @@ db.items.insert(
 
 db.orders.insert(
    [
-     { Type: "Beverage", Name: "Coca cola", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Beverage", Name: "Honest Tea, Just Black", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Beverage", Name: "Kevita Kombucha, Citrus", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Beverage", Name: "Kevita Kombucha, Ginger",  Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Beverage", Name: "Kevita, Lemon Cayenne", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Pasta", Name: "Pasta with Bolognese", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Pasta", Name: "Pasta with Pesto", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Soup", Name: "Potato leek soup", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Sushi", Name: "Caffe roll", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Sushi", Name: "Soba sushi roll", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Burrito", Name: "Burrito Vegetable", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Burrito", Name: "Burrito Bison", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" },
-     { Type: "Salad", Name: "Chef Salad", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False" }
+     { Type: "Beverage", Name: "Coca cola", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Beverage", Name: "Honest Tea, Just Black", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Beverage", Name: "Kevita Kombucha, Citrus", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Beverage", Name: "Kevita Kombucha, Ginger",  Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Beverage", Name: "Kevita, Lemon Cayenne", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Pasta", Name: "Pasta with Bolognese", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Pasta", Name: "Pasta with Pesto", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Soup", Name: "Potato leek soup", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Sushi", Name: "Caffe roll", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Sushi", Name: "Soba sushi roll", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Burrito", Name: "Burrito Vegetable", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Burrito", Name: "Burrito Bison", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 },
+     { Type: "Salad", Name: "Chef Salad", Time: "00:00", User: "Steve Jobs", Deliverer: "Tim Cook", Completed: "False", Points: 10 }
    ]
 )
