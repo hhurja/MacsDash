@@ -2,6 +2,8 @@ from flask import Flask, request, json
 from pymongo import MongoClient
 from pprint import pprint
 from fake_data_functions import fake_user, fake_order
+from db_object import db_object
+from bson.json_util import dumps
 
 app = Flask(__name__)
 
@@ -19,11 +21,12 @@ def api_users():
 
 @app.route('/api/user/<user_id>', methods=['GET', 'PUT', 'POST'])
 def api_user(user_id):
-	output = fake_user(user_id)
+	#output = fake_user(user_id)
 	# db = client.hackathon
 	# coll = db.users
 	# return coll.find_one({"employee_id": 1})
-	return output
+	#return output
+	return dumps(db_object(['users', user_id], client))
 
 @app.route('/api/orders/')
 def api_orders():
@@ -49,7 +52,7 @@ def api_food(food_id):
 
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
 
 
 
