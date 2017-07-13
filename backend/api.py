@@ -35,21 +35,19 @@ def api_user(user_id):
 
 @app.route('/api/orders/')
 def api_orders():
-	pass
+	return dumps(db_orders_get(client))
 
 @app.route('/api/order/<order_id>', methods=['GET', 'PUT', 'POST'])
 def api_order(order_id):
 	pass
 	if request.method == 'GET':
-		print order_id, type(str(order_id))
-		if str(order_id) == 'all':
-
-			return dumps(db_orders(client))
 		# output = fake_order(order_id)
 		# return orderutput
+		pass
 	elif request.method == 'PUT':
 		pass
 	elif request.method == 'POST':
+		request.args
 		pass
 
 @app.route('/api/order/<building>')
@@ -59,7 +57,7 @@ def api_order_by_building(building):
 @app.route('/api/foods')
 def api_foods():
 	#print type(json.loads(dumps(db_items([], client, all=True))))
-	return json.loads(dumps(db_items([], client, all=True)))
+	return dumps(db_items([], client, all=True))
 
 @app.route('/api/food/<food_id>', methods=['GET', 'PUT', 'POST'])
 def api_food(food_id):
