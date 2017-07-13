@@ -1,7 +1,11 @@
 from flask import Flask, request, json
+from pymongo import MongoClient
+from pprint import pprint
 from fake_data_functions import fake_user, fake_order
 
 app = Flask(__name__)
+
+client = MongoClient('107.170.232.140', 27017)
 
 @app.route('/api')
 def api_root():
@@ -16,6 +20,9 @@ def api_users():
 @app.route('/api/user/<user_id>', methods=['GET', 'PUT', 'POST'])
 def api_user(user_id):
 	output = fake_user(user_id)
+	# db = client.hackathon
+	# coll = db.users
+	# return coll.find_one({"employee_id": 1})
 	return output
 
 @app.route('/api/orders/')
@@ -39,6 +46,7 @@ def api_foods():
 @app.route('/api/food/<food_id>', methods=['GET', 'PUT', 'POST'])
 def api_food(food_id):
 	pass
+
 
 if __name__ == '__main__':
 	app.run()
